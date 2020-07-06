@@ -1,0 +1,1355 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a,ul,li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+.clear{
+    clear: both;
+}
+
+/*======================================================
+                  Header-top css start
+======================================================*/
+
+#header-top{
+    width: 100%;
+    position: relative;
+}
+
+#header-top .slide{
+    width: 100%;
+}
+
+#header-top .banner1{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#header-top .banner2{
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#header-top .banner3{
+    background: url(../images/banner3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#header-top .banner4{
+    background: url(../images/banner4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#header-top .banner5{
+    background: url(../images/banner5.png) no-repeat center;
+    background-size: cover;
+}
+
+#header-top .slick-dots{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-52%);
+    height:145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header-top .slick-dots li button{
+    outline: 0;
+    background: transparent;
+    border: 0;
+    font-size: 0;
+    height:18px;
+    width: 18px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+}
+
+#header-top .slick-dots li button:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    content: '';
+    transform: translate(-50%,-50%);
+}
+
+#header-top .slick-dots .slick-active button{
+    border-color: #744fa0;
+}
+
+#header-top .slick-dots .slick-active button:after{
+    background: #744fa0;
+}
+
+#header-top .slick-dots li #slick-slide-control00{
+    border: 0;
+}
+
+#header-top .slick-dots li #slick-slide-control00:after{
+    background: url(../images/banner-slider-home-icon.png) no-repeat center;
+    width:19px;
+    height: 15px;
+    border-radius: 0;
+}
+
+#header-top .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    height:750px;
+}
+
+#header-top .container{
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+}
+
+#header-top .logo-manu{
+    width: 100%;
+}
+
+#header-top .manu ul li{
+    float: left;
+}
+#header-top .logo{
+    float: left;
+    width: 20%;
+}
+
+#header-top .manu{
+    float: left;
+    text-align: right;
+     width: 80%;
+     width: %;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+#header-top .manu ul li a{
+    font-size:14px;
+    font-weight: 400;
+    color: #fdfdfe;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:capitalize;
+    position: relative;
+    margin-right:40px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#header-top .manu ul li .free{
+    background: #744fa0;
+    padding: 10px 20px;
+    color: #fdfdfe;
+    border-radius:5px;
+    margin-right: 0;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+#header-top .manu ul li a::after{
+    height: 1px;
+    width: 0;
+    background: #744fa0;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: .4s;
+}
+
+#header-top .manu ul li a.free::after{
+    width: 0;
+}
+
+#header-top .manu ul li a:hover{
+    color: #744fa0;
+}
+
+#header-top .manu ul li a:hover::after{
+    width: 50%;
+}
+
+#header-top .manu ul li .free:hover{
+    background: #fdfdfe;
+    color: #353535;
+}
+
+#header-top .manu ul li .free:hover::after{
+    width: 0;
+}
+
+#header-top .text{
+    width: 100%;
+    text-align: right;
+}
+
+#header-top .text h1{
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #fdfdfe;
+    margin-bottom: 30px;
+}
+
+#header-top .text h1 span{
+    color: #744fa0;
+}
+
+#header-top .text h2{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    color: #fdfdfe;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 65px;
+}
+
+#header-top .text h2::after{
+    height: 3px;
+    width:60%;
+    background: #fdfdfe;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+}
+
+#header-top .text p{
+    font-size: 14px;
+    font-weight: 400px;
+    color: #fdfdfe;
+    font-family: 'Open Sans', sans-serif;
+    width: 480px;
+    margin-left: auto;
+    margin-bottom: 60px;
+}
+
+#header-top .button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-top .button a{
+    padding: 10px 20px;
+    background: #fdfdfe;
+    border-radius: 5px;
+    transition: .4s;
+    color: #353535;
+    margin-left: 10px;
+}
+
+#header-top .button .andro{
+    background:  #744fa0;
+    color: #fff;
+}
+
+#header-top .button i{
+    font-size: 33px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+#header-top .button p{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    float: left;
+    width: 113px;
+}
+
+#header-top .button p span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: auto;
+    float: left;
+}
+
+#header-top .button a:hover{
+    background: #744fa0;
+    cursor: pointer;
+    color: #fdfdfe;
+}
+
+#header-top .button .andro:hover{
+    background: #fdfdfe;
+    color: #353535;
+}
+
+/*======================================================
+                  Header-top css end
+======================================================*/
+
+/*======================================================
+                  About-us css start
+======================================================*/
+
+#about-us{
+    width: 100%;
+    margin-top: 130px;
+}
+
+#about-us .text{
+    width: 770px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    color:#353535;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#about-us .text .up{
+    margin-top: 30px;
+}
+
+#about-us .text p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    color:#777777;
+    width: 572px;
+    text-align: center;
+}
+
+#about-us .text .down{
+    margin-top: 35px;
+}
+
+#about-us .image{
+    width: 370px;
+    float: left;
+    text-align: right;
+}
+
+/*======================================================
+                  About-us css end
+======================================================*/
+
+/*======================================================
+               Our Awesome feature css start
+======================================================*/
+
+#feature{
+    width:cover;
+    background: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+#feature .container{
+    position: relative;
+}
+
+#feature .feat{
+    margin-bottom: 30px;
+}
+
+#feature .manu{
+    width:35%;
+    float: left;
+}
+
+#feature .manu .manu-iteam{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+    color: #353535;
+    transition: .4s;
+}
+
+#feature .manu .feature-manu-one{
+    margin-top: 0;
+}
+
+#feature .manu .manu-iteam i{
+    font-size: 42px;
+}
+
+#feature .manu .manu-iteam .text{
+    margin-left: 10px;
+}
+
+#feature .manu .manu-iteam h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    margin-bottom:5px;
+}
+
+#feature .manu .manu-iteam p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+    text-transform:capitalize;
+}
+
+#feature .manu .manu-iteam:after{
+    width: 65%;
+    height: 1px;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background: #353535;
+    content:"";
+    transition: .4s;
+}
+
+#feature .manu .manu-iteam:hover{
+    color:#744fa0; 
+    cursor: pointer;
+}
+
+#feature .manu .manu-iteam:hover:after{
+    width: 370px;
+    background: #744fa0;
+}
+
+#feature .manu .shopping{
+    margin-bottom: 0;
+}
+
+#feature .manu .shopping:hover:after{
+    width: 0;
+}
+
+#feature .manu .active{
+    color: #744fa0;
+}
+
+#feature .manu .active:after{
+    background: #744fa0;
+    width: 370px;
+}
+
+#feature .manu .shopping:after{
+    width: 0;
+}
+
+#feature .manu-details{
+    right: 0;
+    top: 98px;
+    position: absolute;
+}
+
+#feature .feature-details-two{
+    display: none;
+}
+
+#feature .feature-details-three{
+    display: none;
+}
+
+#feature .feature-details-four{
+    display: none;
+}
+
+#feature .feature-details-five{
+    display: none;
+}
+
+
+#feature .image{
+    float: left;
+    text-align: center;
+    margin-right: 80px;
+}
+
+#feature .item{
+    float: left;
+    text-align: right;
+}
+
+#feature .item h1{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    color:#353535;
+    margin-top: 70px;
+    margin-bottom: 28px;
+}
+
+#feature .item p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+    color: #777777;
+    margin-left: auto;
+    line-height: 24px;
+    width: 360px;
+}
+
+#feature .item .down{
+    margin-top: 17px;
+}
+
+/*======================================================
+               Our Awesome feature css end
+======================================================*/
+
+/*======================================================
+               Screenshort css start
+======================================================*/
+
+#screenshort{
+    margin-bottom: 145px;
+}
+
+#screenshort .container .ss{
+    margin-top: 80px;
+    margin-bottom:70px;
+}
+
+#screenshort .images{
+    display: flex;
+    margin-bottom:33px;
+    width: 100%;
+}
+
+#screenshort .slick-list{
+    margin-right: -28.5px;
+}
+
+#screenshort ul{
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+}
+
+#screenshort ul li button{
+    outline: 0;
+    border: 3px solid #353535;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 0;
+    cursor: pointer;
+    position: relative;
+    margin: 0 5px;
+}
+
+#screenshort ul li button:after{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: '';
+}
+
+#screenshort ul .slick-active button{
+    border-color: #744fa0;
+}
+
+#screenshort ul .slick-active button:after{
+    background: #744fa0;
+}
+
+#screenshort .image{
+    width: 18%;
+    height: 342px;
+    overflow: hidden;
+    margin-right: 28.5px;
+}
+
+#screenshort .image:hover{
+    cursor: pointer;
+}
+
+#screenshort .image img{
+    width: 100%;
+    height: 100%;
+}
+
+/*======================================================
+               Screenshort css end
+======================================================*/
+
+/*======================================================
+               Watch video css star
+======================================================*/
+
+#watch-video{
+    margin-bottom: 80px;
+    width: cover;
+}
+
+#watch-video .watch{
+    margin-bottom: 30px;
+}
+
+#watch-video .video{
+    position: relative;
+    background: url(../images/watch-video-image.png) no-repeat center;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#watch-video .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.6);
+}
+
+#watch-video .video i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    transition: .2s;
+}
+
+#watch-video .video i:hover{
+    cursor: pointer;
+    color:#744fa0;
+
+}
+
+/*======================================================
+               Watch video css end
+======================================================*/
+
+/*======================================================
+               pricing part css start
+======================================================*/
+
+#pricing{
+    width: cover;
+}
+
+#pricing .price{
+    margin-bottom: 30px;
+}
+
+#pricing .plan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#pricing .plan .plan-option{
+    width: 270px;
+    
+}
+
+#pricing .plan .plan-option .up{
+    height: 60px;
+    width: 100%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:.4s;
+    border-left:1px solid #f1f1f1;
+    border-right:1px solid #f1f1f1;
+    border-top:1px solid #f1f1f1;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+#pricing .plan .plan-option .up h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    color:#353535;
+}
+
+#pricing .plan .plan-option .middle{
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left:1px solid #f1f1f1;
+    border-right:1px solid #f1f1f1;
+}
+
+#pricing .plan .plan-option .middle .cercle{
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .plan .plan-option .middle .cercle h1{
+    font-size:47px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    color:#353535;
+    text-align:center;
+    margin-top: 13px;
+}
+
+#pricing .plan .plan-option .middle .cercle h1 span{
+    font-size: 18px;
+}
+
+#pricing .plan .plan-option .middle .cercle p{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:capitalize;
+    color:#555555;
+    text-align:center;
+}
+
+#pricing .plan .plan-option .down{
+    height: 187px;
+    width: 100%;
+    background: #f1f1f1;
+    border-left:1px solid #f1f1f1;
+    border-right:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+#pricing .plan .plan-option .down p{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:capitalize;
+    color:#555555;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+#pricing .plan .plan-option .down .one{
+    padding-top:30px;
+}
+
+#pricing .plan .plan-option .down a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+    text-transform:capitalize;
+    color: #353535;
+    padding: 10px 20px;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top:5px;
+    transition:.4s;
+}
+
+#pricing .plan .plan-option:hover .down a{
+    background: #744fa0;
+    border: 1px solid #744fa0;
+    color:#fff;
+}
+
+#pricing .plan .plan-option:hover .up{
+    background: #744fa0;
+    border-left:1px solid #744fa0;
+    border-right:1px solid #744fa0;
+    border-top:1px solid #744fa0;
+}
+
+#pricing .plan .plan-option:hover .up h2{
+    color:#fff;
+}
+
+/*======================================================
+               pricing part css end
+======================================================*/
+
+/*======================================================
+               team part css start
+======================================================*/
+
+#team-part .team{
+    margin-bottom: 60px;
+}
+
+#team-part .team-member{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 182px;
+}
+
+#team-part .team-member .member{
+    width: 365px;
+    height: 370px;
+    margin-top: 85px;
+    transition: .4s;
+    position: relative;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+#team-part .team-member .member .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#team-part .team-member .member .overlay-down{
+    width: 363px;
+    height: 100%;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    border-radius:15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: -1;
+}
+
+#team-part .team-member .member .overlay-down h1{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    color:#353535;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+#team-part .team-member .member .overlay-down h2{
+    color:#555555;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family:'Open Sans', sans-serif;
+    text-transform:capitalize;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+#team-part .team-member .member .overlay-down p{
+    font-size: 14px;
+    font-weight: 400px;
+    color: #777777;
+    font-family:'Open Sans', sans-serif;
+    text-align:center;
+    width: 243px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#team-part .team-member .member .overlay a i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    color: #353535;
+    transition: .4s;
+    margin-right: 10px;
+}
+
+#team-part .team-member .member .overlay .down i{
+    margin-right: 0;
+}
+
+#team-part .team-member .member .overlay a i:hover{
+    background: #1da1f2;
+    color: #fff;
+    cursor: pointer;
+}
+
+#team-part .team-member .member:hover{
+    margin-top: 0px;
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#team-part .team-member .member:hover .overlay{
+    transform: scale(1);
+}
+
+#team-part .team-member .member:hover .overlay-down{
+    margin-top:52%;
+}
+
+#team-part .team-member .member img{
+    height: 100%;
+    width: 100%;
+}
+
+/*======================================================
+               team part css end
+======================================================*/
+
+/*======================================================
+               feedback part css start
+======================================================*/
+
+#feedback .back-image{
+    background: url(../images/background-of-feedback-part.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    margin-bottom: 90px;
+}
+
+#feedback .back-image .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    padding-top: 50px;
+    padding-bottom: 82px;
+}
+
+#feedback .back-image .overlay .all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback .feedback-slider .slick-list{
+    height: 270px;
+}
+
+#feedback .feedback-slider{
+    width: 800px;
+   
+}
+
+#feedback .user-feedback{
+    width: 800px;
+    padding-top: 30px;
+    height: 205px;
+    background: #f1f1f1;
+    border-radius: 15px;
+    position: relative;
+    outline: 0;
+}
+
+#feedback .user-feedback p{
+    font-size: 14px;
+    font-weight: 400px;
+    color: #777777;
+    font-family:'Open Sans', sans-serif;
+    text-align:center;
+    width:650px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#feedback .user-feedback .star{
+    color: #744fa0;
+    font-size: 14px;
+    margin:0 auto;
+    text-align: center;
+}
+
+#feedback .user-feedback .star i{
+    margin-left: 3px;
+}
+
+#feedback .user-feedback .star i.last{
+    margin-left: 0;
+}
+
+#feedback .user-feedback h1{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform:capitalize;
+    color:#353535;
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#feedback .user-feedback h2{
+    color:#555555;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family:'Open Sans', sans-serif;
+    text-transform:capitalize;
+    text-align:center;
+    margin-bottom: 15px;
+}
+
+#feedback .user-feedback .triangle{
+    height:40px;
+    width: 40px;
+    background:#f1f1f1;
+    border-radius:0 0 8px 0;
+    transform:translateX(-50%) rotate(45deg);
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    z-index: -1;
+}
+
+#feedback .back-image .feedback-image-slider{
+    margin-top:20px;
+    display: flex;
+}
+
+#feedback .back-image .feedback-image-slider .slick-list{
+    width:552px;
+    padding: 0!important;
+    height: 150px;
+}
+
+#feedback .back-image .feedback-image-slider .slick-list .slick-track{
+    margin-top: 22px;
+}
+
+#feedback .feedback-image-slider .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin:0 41px;
+    background: #f1f1f1;
+    border: 1px solid #fff;
+    outline: 0;
+}
+
+#feedback .feedback-image-slider .user:after{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    content: '';
+}
+
+#feedback .back-image .feedback-image-slider .slick-list .slick-current{
+    transform: scale(1.4);
+    border:2px solid #664891;
+    background: #fff;
+    margin: 0 40px;
+}
+
+#feedback .back-image .feedback-image-slider .slick-list .slick-current:after{
+    background: transparent;
+}
+
+#feedback .feedback-image-slider ul{
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+}
+
+#feedback .feedback-image-slider ul li button{
+    outline: 0;
+    border: 3px solid #fff;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 0;
+    cursor: pointer;
+    position: relative;
+    margin: 0 5px;
+}
+
+#feedback .feedback-image-slider ul li button:after{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: '';
+}
+
+#feedback .feedback-image-slider ul .slick-active button{
+    border-color: #744fa0;
+}
+
+#feedback .feedback-image-slider ul .slick-active button:after{
+    background: #744fa0;
+}
+
+#feedback .feedback-image-slider .user img{
+    height: 100%;
+    width: 100%;
+}
+
+/*======================================================
+               feedback part css end
+======================================================*/
+
+/*======================================================
+               get in touch part css start
+======================================================*/
+
+#get-in .get{
+    margin-bottom: 30px;
+}
+
+#get-in .writting form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#get-in form #up{
+    width: 370px;
+    height: 48px;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    outline: 0;
+}
+
+#get-in form input::placeholder{
+    font-size: 14px;
+    font-weight: 400px;
+    font-family:'Open Sans', sans-serif;
+    color: #777777;
+}
+
+#get-in form textarea{
+    width:100%;
+    height: 198px;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top:30px;
+    padding-left: 8px;
+    padding-top: 10px;
+    resize: none;
+    margin-bottom: 30px;
+    outline: 0;
+}
+
+#get-in form textarea::placeholder{
+    font-size: 14px;
+    font-weight: 400px;
+    font-family:'Open Sans', sans-serif;
+    color: #777777;
+}
+
+#get-in .button{
+    display: inline-block;
+    margin:0 auto;
+}
+
+#get-in .button button{
+    background: #744fa0;
+    padding: 10px 20px;
+    border-radius:3px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*======================================================
+               get in touch part css end
+======================================================*/
+
+/*======================================================
+               footer part css start
+======================================================*/
+
+#footer{
+    background:#353535;
+    width: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 80px;
+}
+
+#footer .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .icon{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#footer a{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    color: #353535;
+    transition: .4s;
+    margin-right:10px;
+}
+
+#footer .last{
+    margin-right: 0;
+}
+
+#footer a:hover{
+    cursor: pointer;
+    color:#fff;
+    background:#1da1f2;
+}
+
+#footer h1{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+}
+
+#footer h1 span{
+    color:#744fa0;
+}
+
+#footer h2{
+    font-size:16px;
+    color: #fff;
+    font-family:'Open Sans', sans-serif;
+    margin-top: 3px;
+}
+
+#footer h2 span{
+    color:#744fa0;
+}
+
+/*======================================================
+               footer part css end
+======================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appon</title>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
